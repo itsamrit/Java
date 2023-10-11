@@ -1,4 +1,4 @@
-describe how to declare, add , remove and determine size in  java  of following datatypes array , dynamic array , string , char , stack , queue, deque, priority queue, map
+describe how to declare, add , remove and determine size and get top element in  java  of following datatypes array , dynamic array , string , char , stack , queue, deque, priority queue, map
   
 ### 1. Arrays:
 ```
@@ -13,6 +13,7 @@ list.add(element);
 list.remove(element);
 list.remove(index);
 int size = list.size();
+int last = arrayList.get(arrayList.size() - 1);
 ```
 
 ### 3. String: Strings are immutable I,e values can't be changed. So use array of chars
@@ -30,16 +31,18 @@ char ch = 'A';
 ```
 Stack<dataType> stack = new Stack<>();
 stack.push(element);
-int poppedElement = stack.pop();
+stack.pop();
 int size = stack.size();
+int top = stack.peek();
 ```
 
 ### 6. Queue:
 ```
-Queue<dataType> queue = new LinkedList<>();  🟩
-queue.offer(element);
-int dequeuedElement = queue.poll();
-int size = queue.size();
+Queue<dataType> q = new LinkedList<>();  🟩
+q.offer(element);
+q.poll();
+int size = q.size();
+int front = q.peek;
 ```
 
 ### 7. Deque:
@@ -47,16 +50,16 @@ int size = queue.size();
 Deque<Integer> deque = new LinkedList<>();  🟩
 deque.addFirst(element);
 deque.addLast(element);
-int removedFromFront = deque.removeFirst();
-int removedFromEnd = deque.removeLast();
-int size = deque.size();
+deque.removeFirst();
+deque.removeLast();
+deque.size();
 ```
 
 ### 8. Priority Queue:
 ```
 PriorityQueue<dataType> priorityQueue = new PriorityQueue<>();
 priorityQueue.offer(element);
-int removedElement = priorityQueue.poll();
+priorityQueue.poll();
 int size = priorityQueue.size();
 ```
 
@@ -66,4 +69,7 @@ Map<KeyType, ValueType> map = new HashMap<>();  🟩
 map.put(key, value);
 map.remove(key);
 int size = map.size();
+if(map.containsKey(k))
+     map.get(k);
+
 ```
