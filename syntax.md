@@ -1,4 +1,4 @@
-describe how to declare, add , remove and determine size and get top element in  java  of following datatypes array , dynamic array , string , char , stack , queue, deque, priority queue, map
+describe how to declare, add , remove and determine size and retrieve element in  java  of following datatypes array , dynamic array , string , char , stack , queue, deque, priority queue, map
   
 ### 1. Arrays:
 ```
