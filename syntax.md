@@ -15,7 +15,7 @@ list.remove(index);
 int size = list.size();
 ```
 
-### 3. String:
+### 3. String: Strings are immutable I,e values can't be changed. So use array of chars
 ```
 String str = "Hello, World!";
 int size = str.length();
@@ -36,7 +36,7 @@ int size = stack.size();
 
 ### 6. Queue:
 ```
-Queue<dataType> queue = new LinkedList<>();
+Queue<dataType> queue = new LinkedList<>();  🟩
 queue.offer(element);
 int dequeuedElement = queue.poll();
 int size = queue.size();
@@ -44,7 +44,7 @@ int size = queue.size();
 
 ### 7. Deque:
 ```
-Deque<dataType> deque = new LinkedList<>();
+Deque<Integer> deque = new LinkedList<>();  🟩
 deque.addFirst(element);
 deque.addLast(element);
 int removedFromFront = deque.removeFirst();
@@ -62,7 +62,7 @@ int size = priorityQueue.size();
 
 ### 9. Map:
 ```
-Map<KeyType, ValueType> map = new HashMap<>();
+Map<KeyType, ValueType> map = new HashMap<>();  🟩
 map.put(key, value);
 map.remove(key);
 int size = map.size();
