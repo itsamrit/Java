@@ -52,15 +52,18 @@ deque.addFirst(element);
 deque.addLast(element);
 deque.removeFirst();
 deque.removeLast();
+int First =deque.peekFirst();
+int last = deque.peekLast();
 deque.size();
 ```
 
 ### 8. Priority Queue:
 ```
-PriorityQueue<dataType> priorityQueue = new PriorityQueue<>();
-priorityQueue.offer(element);
-priorityQueue.poll();
-int size = priorityQueue.size();
+PriorityQueue<dataType> pq = new PriorityQueue<>();
+pq.offer(element);
+pq.poll();
+int size = pq.size();
+int peek = pq.peek();
 ```
 
 ### 9. Map:
