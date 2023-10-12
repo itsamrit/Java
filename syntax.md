@@ -13,7 +13,7 @@ a.add(element);
 a.remove(element);
 a.remove(index);
 int size = a.size();
-int last = a.get(a.size() - 1);
+int last = a.get(i);
 ```
 
 ### 3. String: Strings are immutable I,e values can't be changed. So use array of chars
