@@ -19,6 +19,7 @@ int last = a.get(i);
 ### 3. String: Strings are immutable I,e values can't be changed. So use array of chars
 ```
 String str = "Hello, World!";
+str = temp;🟩
 int size = str.length(); 🟩
 s.charAt(i); not s[i]
 ```
