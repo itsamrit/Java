@@ -8,12 +8,12 @@ int size = array.length;
 
 ### 2. Dynamic Arrays (ArrayList):
 ```
-ArrayList<dataType> listName = new ArrayList<>();
-list.add(element);
-list.remove(element);
-list.remove(index);
-int size = list.size();
-int last = arrayList.get(arrayList.size() - 1);
+ArrayList<dataType> a = new ArrayList<>();
+a.add(element);
+a.remove(element);
+a.remove(index);
+int size = a.size();
+int last = a.get(a.size() - 1);
 ```
 
 ### 3. String: Strings are immutable I,e values can't be changed. So use array of chars
@@ -48,10 +48,10 @@ int front = q.peek;
 ### 7. Deque:
 ```
 Deque<Integer> deque = new LinkedList<>();  🟩
-deque.addFirst(element);
-deque.addLast(element);
-deque.removeFirst();
-deque.removeLast();
+deque.offerFirst(element);
+deque.offerLast(element);
+deque.pollFirst();
+deque.poll.Last();
 int First =deque.peekFirst();
 int last = deque.peekLast();
 deque.size();
