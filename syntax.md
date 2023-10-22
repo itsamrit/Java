@@ -78,3 +78,15 @@ if(map.containsKey(k))
      map.get(k);
 
 ```
+### 10. Set:
+```
+Set<String> s = new HashSet<>();
+s.add("Element1");
+s.remove("Element2");
+int size = s.size();
+Iterator<String> iterator = stringSet.iterator();
+if (iterator.hasNext()) {
+String firstElement = iterator.next();
+
+if (s.contains(targetElement))
+
