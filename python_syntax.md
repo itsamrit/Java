@@ -1,12 +1,7 @@
 Certainly! Here's the equivalent code in Python for the given operations on different data types:
 
-1. Arrays:
-```python
-array = [None] * size
-size = len(array)
-```
 
-2. Dynamic Arrays (List):
+1. Dynamic Arrays (List):
 ```python
 a = []
 a.append(element)
@@ -16,7 +11,7 @@ size = len(a)
 last = a[i]
 ```
 
-3. String:
+2. String:
 ```python
 str_var = "Hello, World!"
 temp = str_var
@@ -24,19 +19,13 @@ size = len(str_var)
 char_at_i = str_var[i]
 ```
 
-4. Char:
+3. Char:
 ```python
 ch = 'A'
 ```
 
 5. Stack:
-```python
-stack = []
-stack.append(element)
-stack.pop()
-size = len(stack)
-top = stack[-1]
-```
+Python doesn't have a built-in implementation of a traditional stack. Lists in Python can be used as stacks
 
 6. Queue:
 
@@ -99,4 +88,4 @@ if target_element in s:
     # Do something
 ```
 
-Note: Python doesn't have a built-in implementation of a traditional stack. Lists in Python can be used as stacks, but they also support additional operations like random access. Similarly,  and Python dictionaries can be used as maps.
+Note: Python dictionaries can be used as maps.
