@@ -13,15 +13,15 @@ last = a[i]
 
 2. String:
 ```python
-str_var = "Hello, World!"
+s = "Hello, World!"
 temp = str_var
 size = len(str_var)
-char_at_i = str_var[i]
+c = str_var[i]
 ```
 
 3. Char:
 ```python
-ch = 'A'
+c = 'A'
 ```
 
 5. Stack:
@@ -58,21 +58,42 @@ size = len(deque_var)
 ```python
 import heapq
 
-pq = []
-heapq.heappush(pq, element)
-heapq.heappop(pq)
-size = len(pq)
-peek = pq[0]
+# Example of Min-Heap
+min_heap = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
+heapq.heapify(min_heap)
+print("Min-Heap:", min_heap)
+
+# Example of Max-Heap (by negating values)
+max_heap = [-x for x in min_heap]
+heapq.heapify(max_heap)
+print("Max-Heap:", [-x for x in max_heap])
+
+# Inserting into Min-Heap
+heapq.heappush(min_heap, 0)
+print("After inserting 0 into Min-Heap:", min_heap)
+
+# Inserting into Max-Heap (by negating value)
+heapq.heappush(max_heap, -7)
+print("After inserting -7 into Max-Heap:", [-x for x in max_heap])
+
+# Popping from Min-Heap
+min_value = heapq.heappop(min_heap)
+print(f"Popped from Min-Heap: {min_value}, Updated Min-Heap: {min_heap}")
+
+# Popping from Max-Heap (by negating value)
+max_value = -heapq.heappop(max_heap)
+print(f"Popped from Max-Heap: {max_value}, Updated Max-Heap: {[-x for x in max_heap]}")
+
 ```
 
 9. Map (Dictionary):
 ```python
-map_dict = {}
-map_dict[key] = value
-map_dict.pop(key, None)
-size = len(map_dict)
-if key in map_dict:
-    value = map_dict[key]
+m = {}
+m[key] = value
+m.pop(key, None)
+size = len(m)
+if key in m:
+    value = m[key]
 ```
 
 10. Set:
