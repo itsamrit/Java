@@ -99,6 +99,7 @@ if key in m:
 10. Set:
 ```python
 s = set()
+s= set(listName)
 s.add("Element1")
 s.remove("Element2")
 size = len(s)
