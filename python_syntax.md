@@ -1,6 +1,8 @@
 Certainly! Here's the equivalent code in Python for the given operations on different data types:
 
 
+in for all things just like MySQL for searching
+
 1. Dynamic Arrays (List):
 ```python
 a = []
@@ -90,7 +92,7 @@ print(f"Popped from Max-Heap: {max_value}, Updated Max-Heap: {[-x for x in max_h
 ```python
 m = {}
 m[key] = value
-m.pop(key, None)
+m.pop(key)
 size = len(m)
 if key in m:
     value = m[key]
