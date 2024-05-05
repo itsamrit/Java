@@ -90,7 +90,8 @@ print(f"Popped from Max-Heap: {max_value}, Updated Max-Heap: {[-x for x in max_h
 
 9. Map (Dictionary):
 ```python
-m = {}
+
+m = {}  # m = defaultdict(int) is orderedmap used in vertical order traversal of tree
 m[key] = value
 m.pop(key)
 size = len(m)
